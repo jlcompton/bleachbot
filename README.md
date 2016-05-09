@@ -1,8 +1,6 @@
 # bleachbot
 Plays Bleach Online, based on Automate the Boring Stuff's Sushi Bot
 
-
-
 import pyautogui, time
 
 print('Starting Home Automation..2...1...')
@@ -19,8 +17,7 @@ for i in range(4):
     i += 1
 
 print('Butterfrees!')
-
-time.sleep(5)
+time.sleep(2)
 pyautogui.click(780, 710)
 time.sleep(2)
 pyautogui.click(1071, 612)
@@ -42,7 +39,10 @@ for i in range(8):
     pyautogui.click(828, 475) #loot all button
 
     
-print('Interact with Waifu')    
+print('Interact with waifu')
+pyautogui.click(1320, 339) #girlfriend icon
+pyautogui.click(1257, 220) #buy something for her
+time.sleep(1)
 pyautogui.click(1032, 336) #house icon
 for i in range(12):
     pyautogui.click(1032, 336) #house icon
@@ -56,7 +56,7 @@ for i in range(12):
     time.sleep(62) #1 minute cooldown plus wait time
     i += 1
     
-print('Party Time')    
+print('Party time')    
 pyautogui.click(1032, 336) #house icon
 time.sleep(2)
 pyautogui.click(836, 304) # party tab
@@ -90,5 +90,18 @@ for i in range(8):
     time.sleep(1)
     i += 1
 pyautogui.click(1113, 266)
+
+
+print('Go Back Home')
+pyautogui.click(213, 252) #my home button
+time.sleep(3)
+
+print('Butterfrees!')
+pyautogui.click(780, 710) #butterfly icon
+time.sleep(2)
+pyautogui.click(514, 357) # feed butterflies  
+time.sleep(2)
+pyautogui.click(854, 266) #x to close
+
 
 
